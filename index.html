@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="en" data-theme="light">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link href="https://cdn.jsdelivr.net/npm/daisyui@3.6.4/dist/full.css" rel="stylesheet" type="text/css" />
+    <script src="https://cdn.tailwindcss.com"></script>
+    <link rel="shortcut icon" href="Logo.png" type="image/x-icon">
+    <title>PH Tube</title>
+</head>
+
+<body>
+    <nav class="flex md:w-[700px] lg:w-[1200px] mx-auto">
+        <div class="navbar lg:mb-6 mt-5 ml-3 bg-base-100">
+            <div class="navbar-start">
+                <img src="Logo.png" alt="">
+            </div>
+            <div class="navbar-center">
+                <button  id="sortByViewButton" onclick="handleSort('currentCategoryId')" class="btn btn-gray normal-case text-xl">Sort by view</button>
+            </div>
+            <div class="navbar-end ml-10">
+                <a class="btn btn-bg-red" href="blog.html">Blog</a>
+            </div>
+        </div>
+        <hr>
+    </nav>
+    <main class="flex flex-col md:w-[900px] lg:w-[1400px] mx-auto gap-6">
+        <div class="tab-container m-auto w-full">
+            <div class="flex justify-center lg:w-[30%] m-auto text-center">
+                <div id="tab-container" class="grid grid-cols-1 gap-3 md:grid-cols-4 lg:grid-cols-4 mt-4 mb-7">
+
+                </div>
+            </div>
+        </div>
+        <div class="flex flex-col lg:flex-row ml-7 mx-auto">
+            <div id="card-container"
+                class="card mr-4 cursor-pointer m-auto grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-2 ml-5">
+
+            </div>
+        </div>
+        <div id="not-found" class="items-center justify-center  mt-28 hidden lg:w-[1200px] mx-auto">
+            <div class="text-center">
+                <img src="Icon.png" alt="Image" class="mx-auto w-24 h-24" />
+                <p class="mt-4 text-lg">Oops!! Sorry, There is no <br> content here</p>
+            </div>
+        </div>
+        
+    </main>
+    <script src="js/index.js"></script>
+</body>
+
+</html>
