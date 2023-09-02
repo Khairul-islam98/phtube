@@ -75,6 +75,7 @@ const handleCard = async (id, sort = false) => {
         `;
             cardContainer.appendChild(div)
         })
+        document.getElementById("not-found").style.display = "none";
     }
     else {
        document.getElementById("not-found").style.display = "block";
